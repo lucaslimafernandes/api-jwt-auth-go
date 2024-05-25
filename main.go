@@ -17,6 +17,8 @@ func main() {
 	router := gin.Default()
 
 	router.POST("/auth/signup", controllers.CreateUser)
+	router.POST("/auth/login", controllers.Login)
+	// router.GET("/user/profile", middlewares.CheckAuth, controllers.GetUserProfile)
 
 	router.Run()
 

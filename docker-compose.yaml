@@ -6,6 +6,10 @@ services:
   db:
     image: postgres:alpine3.20
     restart: always
+    networks:
+      - apijwt
+    volumes:
+      - db-data:/var/lib/postgres/data
     # set shared memory limit when using docker-compose
     shm_size: 128mb
     # or set shared memory limit when deploy via swarm stack
@@ -26,3 +30,18 @@ services:
   #   restart: always
   #   ports:
   #     - 8080:8080
+  server:
+    image: api-jwt-go
+    environment:
+      - exm=value
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+    networks:
+      - apijwt
+
+networks:
+  apijwt:
+volumes:
+  db-data:
