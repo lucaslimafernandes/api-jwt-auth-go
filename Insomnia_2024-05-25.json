@@ -1,1 +1,145 @@
-{"_type":"export","__export_format":4,"__export_date":"2024-05-26T02:55:37.333Z","__export_source":"insomnia.desktop.app:v2023.2.2","resources":[{"_id":"req_88192dd2c11c4d95a002cd9669be638d","parentId":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","modified":1716691935719,"created":1716691830927,"url":"localhost:3000/auth/login","name":"login","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"email\": \"lucasrocapp@gmail.com\",\n\t\"password\": \"1234\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1716691830927,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","parentId":null,"modified":1716677546438,"created":1716677546438,"name":"api-jwt-auth-go-requests","description":"","scope":"collection","_type":"workspace"},{"_id":"req_b5662b4997f849f4b2853e06aa4cd2f0","parentId":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","modified":1716691876197,"created":1716691817313,"url":"localhost:3000/auth/signup","name":"signup","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"email\": \"lucasrocapp@gmail.com\",\n\t\"password\": \"1234\",\n\t\"fullname\": \"Lucas\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1716691817313,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_69c3b801fddf4b1bb1e394fd8eb559b6","parentId":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","modified":1716691955681,"created":1716677664434,"url":"localhost:3000/user/profile","name":"userProfile","description":"","method":"GET","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"id":"pair_99283273571b4079ae9b5aae17446ef5","name":"Authorization","value":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY3NzgzMzYsImlkIjoxfQ.D5eMdZ1FqUbmApoqLdaKCJmLZHhvpp_DgJsfvQlt1sk","description":""}],"authentication":{},"metaSortKey":-1716677664434,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_9b30a58f8df1e2a6cc1f04784fd0a4019d3d8a82","parentId":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","modified":1716677546442,"created":1716677546442,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1716677546442,"_type":"environment"},{"_id":"jar_9b30a58f8df1e2a6cc1f04784fd0a4019d3d8a82","parentId":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","modified":1716677546443,"created":1716677546443,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_35d03bd2255a422ebc8cbebc99b47cf6","parentId":"wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79","modified":1716677546439,"created":1716677546439,"fileName":"api-jwt-auth-go-requests","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-05-26T02:55:37.333Z",
+    "__export_source": "insomnia.desktop.app:v2023.2.2",
+    "resources": [
+        {
+            "_id": "req_88192dd2c11c4d95a002cd9669be638d",
+            "parentId": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "modified": 1716691935719,
+            "created": 1716691830927,
+            "url": "localhost:3000/auth/login",
+            "name": "login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"lucasrocapp@gmail.com\",\n\t\"password\": \"1234\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716691830927,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "parentId": null,
+            "modified": 1716677546438,
+            "created": 1716677546438,
+            "name": "api-jwt-auth-go-requests",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_b5662b4997f849f4b2853e06aa4cd2f0",
+            "parentId": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "modified": 1716691876197,
+            "created": 1716691817313,
+            "url": "localhost:3000/auth/signup",
+            "name": "signup",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"lucasrocapp@gmail.com\",\n\t\"password\": \"1234\",\n\t\"fullname\": \"Lucas\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716691817313,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_69c3b801fddf4b1bb1e394fd8eb559b6",
+            "parentId": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "modified": 1716691955681,
+            "created": 1716677664434,
+            "url": "localhost:3000/user/profile",
+            "name": "userProfile",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_99283273571b4079ae9b5aae17446ef5",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY3NzgzMzYsImlkIjoxfQ.D5eMdZ1FqUbmApoqLdaKCJmLZHhvpp_DgJsfvQlt1sk",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716677664434,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_9b30a58f8df1e2a6cc1f04784fd0a4019d3d8a82",
+            "parentId": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "modified": 1716677546442,
+            "created": 1716677546442,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1716677546442,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_9b30a58f8df1e2a6cc1f04784fd0a4019d3d8a82",
+            "parentId": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "modified": 1716677546443,
+            "created": 1716677546443,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_35d03bd2255a422ebc8cbebc99b47cf6",
+            "parentId": "wrk_1e9219cb2aae4f6ab0120f6ef2e6fe79",
+            "modified": 1716677546439,
+            "created": 1716677546439,
+            "fileName": "api-jwt-auth-go-requests",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
