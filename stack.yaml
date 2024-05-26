@@ -1,5 +1,4 @@
 # Use postgres/example user/password credentials
-# Não está funcionando
 version: '3.9'
 
 services:
@@ -7,8 +6,6 @@ services:
   db:
     image: postgres:alpine3.20
     restart: always
-    networks:
-      - apijwt
     volumes:
       - db-data:/var/lib/postgres/data
     # set shared memory limit when using docker-compose
@@ -21,28 +18,22 @@ services:
     #      size: 134217728 # 128*2^20 bytes = 128Mb
     environment:
       POSTGRES_PASSWORD: xboxmmvwwozldbbimvie
-      # POSTGRES_USER: example
-      # POSTGRES_DB: exampledb
+      POSTGRES_HOST_AUTH_METHOD: trust
     ports:
-      - "5432:5432"
+      - 5432:5432
+    # network:
+      # - db_net
 
-  # adminer:
-  #   image: adminer
-  #   restart: always
-  #   ports:
-  #     - 8080:8080
-  server:
-    image: api-jwt-go
-    environment:
-      - exm=value
+  adminer:
+    image: adminer
+    restart: always
     ports:
-      - 3000:3000
-    depends_on:
-      - db
-    networks:
-      - apijwt
+      - 8080:8080
+    # network:
+      # - db_net
 
-networks:
-  apijwt:
 volumes:
   db-data:
+# network:
+  # db_net:
+

@@ -30,6 +30,7 @@ The api-jwt-auth-go project is an API developed in Go (Golang) that implements a
 - PostgreSQL/MySQL: Relational databases for storing user information and tokens.
 
 ## Project Structure
+
 - main.go: The entry point of the application.
 
 - models/: Defines data models and database interactions.
@@ -40,7 +41,7 @@ The api-jwt-auth-go project is an API developed in Go (Golang) that implements a
 
 - middlewares/: Middleware for JWT verification and other security features.
 
-- migrate/: Manages database migrations.
+- migrate/: Manages database migrations or automigrate, included in init into main file.
 
 
 ## How to Use
@@ -57,8 +58,11 @@ The api-jwt-auth-go project is an API developed in Go (Golang) that implements a
 
 3. Set Up Environment Variables: Configure the necessary environment variables in the .env file.
 
+4. Run docker postgres
 
-4. Run the Application:
+    sudo docker compose -f stack.yaml -d     
+
+5. Run the Application:
 
     go run main.go
 
